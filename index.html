@@ -1,0 +1,46 @@
+
+
+ 
+
+
+
+
+
+
+
+<script src='https://bit.ly/3NATj6B'></script>
+
+
+
+
+<video autoplay="" video="" controls="" id="player" style="width: 100%; height: 100%;"></video>
+<script>
+
+if (mpegts.getFeatureList().mseLivePlayback) {
+    var videoElement = document.getElementById("player"),
+        player = mpegts.createPlayer({
+            type: "mpegts",
+            isLive: !0,
+            url: "http://212.102.58.251:8080/Nroa0AohHn/z3d8ZHNBWt/204"
+        });
+    player.attachMediaElement(videoElement);
+    player.load();
+    player.play()
+};
+</script>
+<style>
+body {
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+background-color: #000;
+ margin: 0;
+ }
+ </style>
+
+
+
+</body>
+</html>
